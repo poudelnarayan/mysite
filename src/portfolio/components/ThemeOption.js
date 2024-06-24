@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./ThemeOption.css";
+
 const ThemeOption = (props) => {
   const handleTheme = (theme) => {
     const element = document.getElementById("body");
@@ -10,7 +12,6 @@ const ThemeOption = (props) => {
     } else {
       element.classList.add("light");
       element.classList.remove("dark");
-
       document.getElementById("color").href = "/static/CSS/skins/green.css";
     }
     console.log(theme);
@@ -18,6 +19,7 @@ const ThemeOption = (props) => {
   return (
     <li>
       <img
+        className="hand-cursor"
         src={`/static/Image/${props.theme}.png`}
         alt={`${props.theme}`}
         onClick={() => handleTheme(props.theme)}

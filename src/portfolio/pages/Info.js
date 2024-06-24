@@ -30,7 +30,7 @@ const Info = () => {
               <img
                 src="/static/Image/img-mobile.jpg" // Adjust the path if necessary
                 className="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
-                alt="my picture"
+                alt="me"
               />
               <h6 className="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">
                 Hi there !
@@ -38,7 +38,7 @@ const Info = () => {
               <h1 className="text-uppercase poppins-font">
                 <span>I'm</span> Narayan Poudel
               </h1>
-              <p onSelectStart={() => false} className="open-sans-font">
+              <p className="open-sans-font">
                 I'm a web designer & android developer focused on crafting clean
                 & user‑friendly experiences. I am passionate about building
                 excellent software that improves the lives of those around me.

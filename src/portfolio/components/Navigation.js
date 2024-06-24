@@ -1,7 +1,13 @@
 import React from "react";
-import "./Navigation.css"; // Ensure this is after Bootstrap
+import { Link } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHome,
+  faUser,
+  faEnvelopeOpen,
+} from "@fortawesome/free-solid-svg-icons";
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./Navigation.css";
 
 const Navigation = () => {
   return (
@@ -10,22 +16,22 @@ const Navigation = () => {
         <header className="header" id="navbar-collapse-toggle">
           <ul className="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
             <li className="icon-box">
-              <i className="fa fa-home"></i>
-              <a href="/">
+              <FontAwesomeIcon icon={faHome} className="fa" />
+              <Link to="/">
                 <h2>Home</h2>
-              </a>
+              </Link>
             </li>
             <li className="icon-box">
-              <i className="fa fa-user"></i>
-              <a href="/about">
+              <FontAwesomeIcon icon={faUser} className="fa" />
+              <Link to="/about">
                 <h2>About</h2>
-              </a>
+              </Link>
             </li>
             <li className="icon-box">
-              <i className="fa fa-envelope-open"></i>
-              <a href="/contact">
+              <FontAwesomeIcon icon={faEnvelopeOpen} className="fa" />
+              <Link to="/contact">
                 <h2>Contact</h2>
-              </a>
+              </Link>
             </li>
           </ul>
 
@@ -37,22 +43,22 @@ const Navigation = () => {
               <span></span>
               <ul className="list-unstyled" id="menu">
                 <li>
-                  <a href="/">
-                    <i className="fa fa-home"></i>
+                  <Link to="/">
+                    <FontAwesomeIcon icon={faHome} className="fa" />
                     <span>Home</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/about">
-                    <i className="fa fa-user"></i>
+                  <Link to="/about">
+                    <FontAwesomeIcon icon={faUser} className="fa" />
                     <span>About</span>
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a href="/contact">
-                    <i className="fa fa-envelope-open"></i>
+                  <Link to="/contact">
+                    <FontAwesomeIcon icon={faEnvelopeOpen} className="fa" />
                     <span>Contact</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

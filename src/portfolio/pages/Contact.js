@@ -1,5 +1,15 @@
 import React, { useEffect } from "react";
-import "@fortawesome/fontawesome-free/css/all.min.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEnvelopeOpen,
+  faPhoneSquare,
+} from "@fortawesome/free-solid-svg-icons";
+import {
+  faFacebook,
+  faGithub,
+  faYoutube,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Contact = () => {
   useEffect(() => {
@@ -25,7 +35,7 @@ const Contact = () => {
           <div className="row">
             <div className="col-12 col-lg-4">
               <h3 className="text-uppercase custom-title mb-0 ft-wt-600 pb-3">
-                Don't be shy !
+                Don't be shy!
               </h3>
               <p className="open-sans-font mb-3">
                 Feel free to get in touch with me. I am always open to discuss
@@ -33,7 +43,11 @@ const Contact = () => {
                 visions.
               </p>
               <p className="open-sans-font custom-span-contact position-relative">
-                <i className="fa fa-envelope-open position-absolute"></i>
+                <FontAwesomeIcon
+                  icon={faEnvelopeOpen}
+                  className="position-absolute "
+                  style={{ paddingRight: "10px" }}
+                />
                 <span className="d-block">mail me</span>
                 <a
                   style={{ color: "unset", textDecoration: "none" }}
@@ -43,7 +57,10 @@ const Contact = () => {
                 </a>
               </p>
               <p className="open-sans-font custom-span-contact position-relative">
-                <i className="fa fa-phone-square position-absolute"></i>
+                <FontAwesomeIcon
+                  icon={faPhoneSquare}
+                  className="position-absolute fa"
+                />
                 <span className="d-block">call me</span>
                 <a
                   style={{
@@ -64,17 +81,17 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-facebook"></i>
+                    <FontAwesomeIcon icon={faFacebook} className="fa" />
                   </a>
                 </li>
                 <li className="github">
                   <a
-                    title="github"
+                    title="Github"
                     href="https://www.github.com/narayan434"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-github"></i>
+                    <FontAwesomeIcon icon={faGithub} className="fa" />
                   </a>
                 </li>
                 <li className="youtube">
@@ -84,17 +101,17 @@ const Contact = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-youtube"></i>
+                    <FontAwesomeIcon icon={faYoutube} className="fa" />
                   </a>
                 </li>
                 <li className="instagram">
                   <a
-                    title="instagram"
+                    title="Instagram"
                     href="https://www.instagram.com/narayan__434/"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <i className="fab fa-instagram"></i>
+                    <FontAwesomeIcon icon={faInstagram} className="fa" />
                   </a>
                 </li>
               </ul>

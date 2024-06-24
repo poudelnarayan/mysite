@@ -1,6 +1,6 @@
-import { createContext } from "react";
+// import { createContext } from "react";
 
-export const ColorContext = createContext({
-  color: "black",
-  changeColor: () => {},
-});
+// export const ColorContext = createContext({
+//   color: "black",
+//   changeColor: () => {},
+// });

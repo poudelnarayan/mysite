@@ -487,25 +487,11 @@ hr.separator {
   border-radius: 30px;
 }
 
-.contact .contactform .output_message.success {
-  background: #28a745;
-}
 
-.contact .contactform .output_message.success:before {
-  font-family: FontAwesome;
-  content: "\f14a";
-  padding-right: 10px;
-}
 
-.contact .contactform .output_message.error {
-  background: #dc3545;
-}
 
-.contact .contactform .output_message.error:before {
-  font-family: FontAwesome;
-  content: "\f071";
-  padding-right: 10px;
-}
+
+
 
 
 /* ******** LOGIN PAGE ************** */

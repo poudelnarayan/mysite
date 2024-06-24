@@ -8,7 +8,7 @@ const ColorOption = ({ color, setActiveStyleSheet }) => {
         alt={color}
         onClick={() => setActiveStyleSheet(color)}
         title={color}
-        className="color"
+        className="color hand-cursor"
       />
     </li>
   );

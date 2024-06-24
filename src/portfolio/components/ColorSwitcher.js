@@ -56,7 +56,11 @@ const ColorSwitcher = () => {
           <h4>THEME SWITCHER</h4>
           <ul>
             {themes.map((theme) => (
-              <ThemeOption key={theme} theme={theme} />
+              <ThemeOption
+                key={theme}
+                theme={theme}
+                toggleDisplaySetting={toggleDisplaySetting}
+              />
             ))}
           </ul>
           <h4>COLOR SWITCHER</h4>

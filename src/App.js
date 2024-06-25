@@ -4,6 +4,7 @@ import {
   Routes,
   Route,
   Navigate,
+  useLocation,
 } from "react-router-dom";
 
 import Info from "./portfolio/pages/Info";
@@ -15,11 +16,13 @@ import DisableCtrlS from "./shared/utils/DisableCtrls";
 import Navigation from "./portfolio/components/Navigation";
 import Preloader from "./portfolio/components/PreLoader";
 
-const App = () => {
+const AppContent = () => {
+  const location = useLocation();
+
   return (
-    <Router>
+    <>
       <Preloader />
-      <Navigation />
+      {location.pathname !== "/pagenotfound" && <Navigation />}
       <DisableCtrlS />
       <Routes>
         <Route path="/" element={<Info />} />
@@ -29,8 +32,14 @@ const App = () => {
         <Route path="/pagenotfound" element={<PageNotFound />} />
         <Route path="*" element={<Navigate to="/pagenotfound" />} />
       </Routes>
-    </Router>
+    </>
   );
 };
+
+const App = () => (
+  <Router>
+    <AppContent />
+  </Router>
+);
 
 export default App;

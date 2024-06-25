@@ -6,6 +6,7 @@
 .about .box-stats h3,
 .title-section h1 span,
 #menu li.active a,
+.contact-icon,
 body.light #menu li.active a,
 .blog .post-container:hover .post-content .entry-header h3 a,
 .blog .post-content .entry-header h3 a:hover,
@@ -32,7 +33,7 @@ body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-
 .home .color-block,
 .title-section hr,
 .portfolio .slideshow .carousel-indicators li.active {
-	background-color: #fa5b0f;
+	background-color: #fa5b0f  !important;
 }
 .contact .contactform input[type=text]:focus,
 .contact .contactform input[type=email]:focus,

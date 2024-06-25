@@ -20,9 +20,9 @@ const personalInfoDataRight = [
   },
   {
     title: "Faceboook",
-    value: "/narayanpoudel",
+    value: "/hellonarayanpoudel",
     link: {
-      href: "https://www.facebook.com/narayanpoudel",
+      href: "https://www.facebook.com/hellonarayanpoudel/",
       target: "_blank",
       rel: "noopener noreferrer",
     },
@@ -43,10 +43,10 @@ const PersonalInfo = () => (
       <div className="col-12 mt-3">
         <a
           href="{% static 'files/My_CV.pdf' %}"
-          className="btn btn-download"
+          className="btn  color-btn  btn-download"
           download
         >
-          Download CV
+          <span>Download CV</span>
         </a>
       </div>
     </div>

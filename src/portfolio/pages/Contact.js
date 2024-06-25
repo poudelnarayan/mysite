@@ -45,8 +45,9 @@ const Contact = () => {
               <p className="open-sans-font custom-span-contact position-relative">
                 <FontAwesomeIcon
                   icon={faEnvelopeOpen}
-                  className="position-absolute "
-                  style={{ paddingRight: "10px" }}
+                  className="position-absolute contact-icon"
+                  size="2x"
+                  style={{ marginLeft: "-50px" }}
                 />
                 <span className="d-block">mail me</span>
                 <a
@@ -59,7 +60,9 @@ const Contact = () => {
               <p className="open-sans-font custom-span-contact position-relative">
                 <FontAwesomeIcon
                   icon={faPhoneSquare}
-                  className="position-absolute fa"
+                  className="position-absolute contact-icon"
+                  size="2x"
+                  style={{ marginLeft: "-50px" }}
                 />
                 <span className="d-block">call me</span>
                 <a
@@ -116,6 +119,7 @@ const Contact = () => {
                 </li>
               </ul>
             </div>
+            {/* TODO: google captcha not working */}
 
             <div className="col-12 col-lg-8">
               <form className="contactform" method="post" action="/contact/">
@@ -160,8 +164,11 @@ const Contact = () => {
                           <br />
                         </div>
                         <div className="col-md-6 col-sm-12">
-                          <button type="submit" className="btn btn-contact">
-                            Send Message
+                          <button
+                            type="submit"
+                            className="btn  color-btn  btn-contact"
+                          >
+                            <span>Send Message</span>s
                           </button>
                         </div>
                       </div>

@@ -11,6 +11,7 @@ const Hire = () => {
       document.body.classList.remove("hire");
     };
   }, []);
+   //TODO: Create components for the page
   return (
     <React.Fragment>
       <section className="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
@@ -44,7 +45,7 @@ const Hire = () => {
                   software.
                 </div>
                 <div className="link-box">
-                  <a href="/contact" className="btn col-md-6 col-sm-6">
+                  <a href="/contact" className="btn color-btn   col-md-6 col-sm-6">
                     Hire Me
                   </a>
                 </div>
@@ -63,7 +64,7 @@ const Hire = () => {
                   Internet apps.
                 </div>
                 <div className="link-box">
-                  <a href="/contact" className="btn col-md-6 col-sm-6">
+                  <a href="/contact" className="btn color-btn   col-md-6 col-sm-6">
                     Hire Me
                   </a>
                 </div>
@@ -85,7 +86,7 @@ const Hire = () => {
                   stakeholders.
                 </div>
                 <div className="link-box">
-                  <a href="/contact" className="btn col-md-6 col-sm-6">
+                  <a href="/contact" className="btn color-btn  col-md-6 col-sm-6">
                     Hire Me
                   </a>
                 </div>
@@ -106,7 +107,7 @@ const Hire = () => {
                   Hosting is the “land” where your website files live.
                 </div>
                 <div className="link-box">
-                  <a href="/contact" className="btn col-md-6 col-sm-6">
+                  <a href="/contact" className="btn color-btn  col-md-6 col-sm-6">
                     Hire Me
                   </a>
                 </div>
@@ -127,7 +128,7 @@ const Hire = () => {
                   You can make me work either by involving me in some projects
                   or hire me as a full-time or part-time developer.
                 </p>
-                <a href="/contact" className="btn">
+                <a href="/contact" className="btn color-btn ">
                   Contact Me
                 </a>
               </div>

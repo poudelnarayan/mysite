@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Info.css"; // Make sure to create this CSS file or adjust the path accordingly.
+import { Link } from "react-router-dom";
 
 const Info = () => {
   useEffect(() => {
@@ -11,6 +12,7 @@ const Info = () => {
       document.body.classList.remove("home");
     };
   }, []);
+ 
 
   return (
     <React.Fragment>
@@ -44,25 +46,24 @@ const Info = () => {
                 excellent software that improves the lives of those around me.
               </p>
               <div className="row">
-                <a
-                  href="/about"
-                  className="btn btn-about col-md-5 col-sm-5 col-5 my-1 mx-2"
+                <Link
+                  to="/about"
+                  className="btn color-btn btn-about col-md-5 col-sm-5 col-5 my-1 mx-2"
                 >
-                  More About Me
-                </a>
-                <a
-                  href="/hire"
-                  className="btn btn-hire col-md-5 col-sm-5 col-5 my-1 mx-2"
+                  <span> More About Me</span>
+                </Link>
+                <Link
+                  to="/hire"
+                  className="btn color-btn   btn-hire col-md-5 col-sm-5 col-5 my-1 mx-2"
                 >
-                  Hire Me
-                </a>
+                  <span> hire Me</span>
+                </Link>
               </div>
               <a
                 href="https://www.facebook.com/groups/939224100171362/"
-                className="btn btn-fb col-md-10 col-sm-10 col-10 my-1 mx-2"
-                style={{ backgroundColor: "#1877f2" }}
+                className="btn btn-fb col-md-10 col-sm-10 col-10 my-1 mx-2 "
               >
-                Join Facebook Community
+                <span> Join Facebook Community</span>
               </a>
             </div>
           </div>

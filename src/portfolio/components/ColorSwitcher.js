@@ -1,5 +1,4 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./ColorSwitcher.css";
 import SettingIcon from "./SettingIcon";
 import ColorOption from "./ColorOption";
 import ThemeOption from "./ThemeOption";

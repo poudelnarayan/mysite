@@ -434,7 +434,7 @@
   }
 
   .btn:before {
-    font: 15px/1.2em FontAwesome;
+    font: 15px/1.2em Arial, sans-serif; /* Choose a font that supports the needed Unicode characters */
     color: #fff;
     position: absolute;
     height: 100%;
@@ -449,16 +449,18 @@
   }
 
   .btn.btn-about:before {
-    content: "\f007";
+    content: "\2764"; /* Unicode for a heart, replace with any suitable Unicode character */
   }
+
   .btn.btn-hire:before {
-    content: "\f007";
+    content: "\2709"; /* Unicode for an envelope */
   }
 
   .btn.btn-portfolio:before {
     content: "\f07c";
     margin-top: -8px;
   }
+  
 
   .btn.btn-preview:before {
     content: "\f08e";
@@ -467,11 +469,11 @@
     content: "\f234";
   }
   .btn.btn-download:before {
-    content: "\f019";
+    content: "\2B07";
   }
 
   .btn.btn-contact:before {
-    content: "\f1d8";
+    content: "\2709";
   }
 
   .btn span {

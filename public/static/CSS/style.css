@@ -1,14 +1,27 @@
-
 html {
   overflow-x: hidden;
   height: 100%;
   cursor: default;
 }
 @media print {
-  html, body {
-     display: none;
+  html,
+  body {
+    display: none;
   }
 }
+/* global.css */
+body::-webkit-scrollbar {
+  display: none !important;
+}
+body {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+body::-webkit-scrollbar {
+  display: none !important;
+}
+
 * {
   -webkit-user-select: none;
   -khtml-user-select: none;
@@ -18,14 +31,14 @@ html {
 }
 
 p {
-  -webkit-user-select: none; /* Safari */        
+  -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+/Edge */
   user-select: none; /* Standard */
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 15px;
   color: #fff;
   font-weight: 500;
@@ -40,19 +53,19 @@ body {
 
 .noselect {
   -webkit-touch-callout: none;
-    -webkit-user-select: none; 
-     -khtml-user-select: none; 
-       -moz-user-select: none; 
-        -ms-user-select: none; 
-            user-select: none; 
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .poppins-font {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .open-sans-font {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 hr.separator {
@@ -78,12 +91,11 @@ hr.separator {
   font-size: 26px;
   text-align: center !important;
 }
-.theme_dark{
+.theme_dark {
   background-color: black;
   border-radius: 2px solid white;
   height: 10px;
   width: 10px;
-
 }
 /*** Buttons ***/
 .btn {
@@ -94,16 +106,14 @@ hr.separator {
   line-height: 46px;
   font-size: 15px;
   text-transform: uppercase;
-  color: #fff;
   padding: 0 40px;
   outline: none !important;
   overflow: hidden;
   display: inline-block;
   position: relative;
-  font-family: 'Poppins', sans-serif;
-  letter-spacing: .5px;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
   border: 0;
-
 }
 
 .btn,
@@ -116,7 +126,7 @@ hr.separator {
   position: fixed;
   right: 30px;
   bottom: 30px;
-  background-color: #Ffffff !important;
+  background-color: #ffffff !important;
   color: #ffb400;
   width: 30px;
   height: 30px;
@@ -124,8 +134,7 @@ hr.separator {
   border: 1px solid #156f89;
   border-radius: 4px;
   position: fixed;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
+  transition: background-color 0.3s, opacity 0.5s, visibility 0.5s;
   opacity: 0;
   visibility: hidden;
   z-index: 1000;
@@ -134,7 +143,7 @@ hr.separator {
   cursor: pointer;
   background-color: #ffb400 !important;
   color: white;
-  }
+}
 #scroll-button:active {
   background-color: #555;
 }
@@ -201,7 +210,7 @@ hr.separator {
   border-radius: 15px;
   left: 30px;
   top: 30px;
-  box-shadow: 0 0 7px rgba(0,0,0,.9);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.9);
 }
 
 .home .container-home {
@@ -253,7 +262,7 @@ hr.separator {
 }
 
 .about .about-list .title {
-  opacity: .8;
+  opacity: 0.8;
   text-transform: capitalize;
 }
 
@@ -282,7 +291,7 @@ hr.separator {
 }
 
 .about .box-stats h3:after {
-  content: '+';
+  content: "+";
   position: absolute;
   right: -24px;
   font-size: 33px;
@@ -350,7 +359,7 @@ hr.separator {
   border-radius: 20px;
   font-weight: 600;
   background-color: #252525;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .about .resume-box h5 {
@@ -365,7 +374,7 @@ hr.separator {
 }
 
 .about .resume-box .place {
-  opacity: .8;
+  opacity: 0.8;
   font-weight: 600;
   font-size: 15px;
   position: relative;
@@ -374,13 +383,13 @@ hr.separator {
 
 .about .resume-box .place:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 10px;
   height: 2px;
   background-color: #fff;
   left: 7px;
   top: 9px;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 /* Skills */
@@ -398,7 +407,6 @@ hr.separator {
 .about .c100:after {
   background-color: #111;
 }
-
 
 /* Left Side */
 
@@ -422,7 +430,7 @@ hr.separator {
 
 .contact .custom-span-contact span {
   text-transform: uppercase;
-  opacity: .8;
+  opacity: 0.8;
   font-weight: 400;
 }
 
@@ -441,15 +449,15 @@ hr.separator {
   line-height: 42px;
   text-align: center;
   color: #fff;
-  transition: .3s;
+  transition: 0.3s;
   font-size: 17px;
   margin: 0 6px;
   background: #2b2a2a;
   border-radius: 50%;
 }
 /* Form */
-.contact .contactform input[type=text],
-.contact .contactform input[type=email] {
+.contact .contactform input[type="text"],
+.contact .contactform input[type="email"] {
   border: 1px solid #111;
   width: 100%;
   background: #252525;
@@ -458,7 +466,7 @@ hr.separator {
   margin-bottom: 30px;
   border-radius: 30px;
   outline: none !important;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact .contactform textarea {
@@ -472,7 +480,7 @@ hr.separator {
   overflow: hidden;
   border-radius: 30px;
   outline: none !important;
-  transition: .3s;
+  transition: 0.3s;
 }
 
 .contact .contactform .form-message {
@@ -487,13 +495,4 @@ hr.separator {
   border-radius: 30px;
 }
 
-
-
-
-
-
-
-
 /* ******** LOGIN PAGE ************** */
-
-

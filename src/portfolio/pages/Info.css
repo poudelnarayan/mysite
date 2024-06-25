@@ -1,0 +1,7 @@
+.btn-fb {
+  background-color: #1877f2 !important;
+}
+
+.btn-fb::before {
+  content: "FB";
+}

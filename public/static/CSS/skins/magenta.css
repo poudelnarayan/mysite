@@ -12,6 +12,7 @@ body.light #menu li.active a,
 .contact .custom-span-contact i,
 .portfolio .slideshow figcaption h3,
 .portfolio .slideshow a,
+.contact-icon,
 .portfolio .grid figure:hover figcaption,
 .blog-post .meta i{
 	color: #ee6192;
@@ -21,6 +22,7 @@ body.light #menu li.active a,
 body.light.contact ul.social li a:hover,
 .preloader .loader,
 .blog .page-link:hover,
+
 .blog .page-item.active .page-link,
 body.light.blog .page-link:hover,
 body.light.blog .page-item.active .page-link,
@@ -32,7 +34,7 @@ body.light .header ul.icon-menu li.icon-box.active, body.light  .header ul.icon-
 .home .color-block,
 .title-section hr,
 .portfolio .slideshow .carousel-indicators li.active {
-	background-color: #ee6192;
+	background-color: #ee6192  !important;
 }
 .contact .contactform input[type=text]:focus,
 .contact .contactform input[type=email]:focus,

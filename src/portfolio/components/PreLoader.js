@@ -12,7 +12,7 @@ const Preloader = () => {
     // Simulate a loading delay to mimic data fetching or route loading
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 420); // Adjust the delay as needed
+    }, 600); // Adjust the delay as needed
 
     // Cleanup the timer
     return () => clearTimeout(timer);

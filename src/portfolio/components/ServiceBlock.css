@@ -1,0 +1,28 @@
+.service-block {
+  margin-bottom: 4px;
+}
+
+.services .row {
+  margin-top: 20px;
+}
+
+.services .text {
+  text-align: left;
+}
+
+.icon.box img {
+  width: 40%;
+  height: 40%;
+}
+
+.inner-box {
+  position: relative;
+  padding: 10px 15px 30px 15px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid #252525 !important;
+}
+.fa-bold {
+  font-size: 1.75em;
+  margin-top: 10px;
+}

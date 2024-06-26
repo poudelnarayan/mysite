@@ -1,0 +1,13 @@
+.errorText {
+  margin-left: 5px;
+  color: #d65a5a;
+  font-size: 12px;
+  margin-top: -21px;
+}
+
+.form-control--invalid input,
+.form-control--invalid textarea {
+  border-color: red !important;
+  background: #ffd1d1 !important;
+  color: black !important;
+}

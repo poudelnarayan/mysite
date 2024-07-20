@@ -9,7 +9,7 @@ const Job = ({ time, title, company, description }) => (
       <FontAwesomeIcon icon={faBriefcase} className="fa" />
     </div>
     <span className="time open-sans-font text-uppercase">{time}</span>
-    <h5 className="poppins-font text-uppercase">
+    <h5 className=" text-uppercase">
       {title} <span className="place open-sans-font">{company}</span>
     </h5>
     <p className="open-sans-font">{description}</p>

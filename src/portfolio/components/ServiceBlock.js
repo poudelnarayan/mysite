@@ -14,7 +14,7 @@ const ServiceBlock = ({ icon, color, title, description, linkTo }) => (
           size="lg"
         />
       </div>
-      <h3 className="poppins-font">{title}</h3>
+      <h3>{title}</h3>
       <div className="text">{description}</div>
       <div className="link-box">
         <Link to={linkTo} className="btn col-md-6 col-sm-6">

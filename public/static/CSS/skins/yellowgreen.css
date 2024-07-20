@@ -36,7 +36,7 @@ body.light .header ul.icon-menu li.icon-box:hover,
 .home .color-block,
 .title-section hr,
 .portfolio .slideshow .carousel-indicators li.active {
-  background-color: #9acd32 !important;
+  background-color: #9acd32 ;
 }
 .contact .contactform input[type="text"]:focus,
 .contact .contactform input[type="email"]:focus,

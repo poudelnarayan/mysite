@@ -2,21 +2,21 @@ body.light {
   color: #666;
   background-color: #fff;
 }
-  
+
 body.home.light .home-details h1 span {
   color: #666;
 }
-  
+
 body.home.light .home-details h6 {
   color: #777;
 }
 
 body.home.light .bg {
-  background-image: url(../Image/myimg.jpg);
+  background-image: url(../Image/myimg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
-  box-shadow: 0 0 7px rgba(0,0,0,.3);
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.3);
 }
 
 body.light .preloader .black_wall {
@@ -53,7 +53,7 @@ body.light.about .resume-box .place:before {
   background-color: #666;
 }
 
-body.light.about  .resume-box li:after {
+body.light.about .resume-box li:after {
   border-left: 1px solid #ddd;
 }
 
@@ -65,23 +65,22 @@ body.light.about .c100:after {
   background-color: #fff;
 }
 
-body.light.contact .contactform input[type=text],
-body.light.contact .contactform input[type=email],
+body.light.contact .contactform input[type="text"],
+body.light.contact .contactform input[type="email"],
 body.light.contact .contactform textarea {
   background-color: #fff;
   border: 1px solid #ddd;
   color: #666;
 }
 
-body.light.contact  ul.social li a {
+body.light.contact ul.social li a {
   color: #666;
   background: #eee;
 }
 
-body.light.contact  ul.social li a:hover {
+body.light.contact ul.social li a:hover {
   color: #fff;
 }
-
 
 body.light hr.separator {
   border-top: 1px solid #ddd;
@@ -105,7 +104,6 @@ body.light hr.separator {
 }
 
 @media (max-width: 991px) {
-
   body.light .main-img-mobile {
     border: 4px solid #eee;
   }
@@ -131,7 +129,6 @@ body.light hr.separator {
   body.light #menu li:after {
     background: #ddd;
   }
-
 }
 
 @media (max-width: 576px) {

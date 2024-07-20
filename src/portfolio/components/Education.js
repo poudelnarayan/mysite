@@ -11,7 +11,7 @@ const Education = () => (
       <ul>
         <School
           time="2020+"
-          degree="Bachloer Degree"
+          degree="Bachelor Degree"
           school="Kantipur Engineering College"
           description="Joined Bachloer of Computer Engineering in Kantipr Engineering College (KEC)"
         />

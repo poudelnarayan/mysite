@@ -46,7 +46,6 @@ const ColorSwitcher = () => {
     "yellow",
   ];
 
-  const themes = ["light", "dark"];
 
   return (
     <div id="switcher" ref={switcherRef}>
@@ -54,13 +53,9 @@ const ColorSwitcher = () => {
         <div className="content-switcher">
           <h4>THEME SWITCHER</h4>
           <ul>
-            {themes.map((theme) => (
-              <ThemeOption
-                key={theme}
-                theme={theme}
-                toggleDisplaySetting={toggleDisplaySetting}
-              />
-            ))}
+            <ThemeOption
+              toggleDisplaySetting={toggleDisplaySetting}
+            />
           </ul>
           <h4>COLOR SWITCHER</h4>
           <ul>

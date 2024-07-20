@@ -7,16 +7,14 @@ import {
   faEnvelopeOpen,
 } from "@fortawesome/free-solid-svg-icons";
 
-import "./Navigation.css";
-
 const Navigation = () => {
   return (
     <React.Fragment>
       <nav>
         <header className="header" id="navbar-collapse-toggle">
-          <ul className="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
-            <li className="icon-box">
-              <FontAwesomeIcon icon={faHome} className="fa" />
+          <ul className="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1 ">
+            <li className="icon-box" style={{ textDecoration: "none" }}>
+              <FontAwesomeIcon icon={faHome} className="fa icon" />
               <Link to="/">
                 <h2>Home</h2>
               </Link>

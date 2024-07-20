@@ -9,7 +9,7 @@ const School = ({ time, degree, school, description }) => (
       <FontAwesomeIcon icon={faGraduationCap} className="fa" />
     </div>
     <span className="time open-sans-font text-uppercase">{time}</span>
-    <h5 className="poppins-font text-uppercase">
+    <h5 className="text-uppercase">
       {degree}
       <span className="place open-sans-font">{school}</span>
     </h5>

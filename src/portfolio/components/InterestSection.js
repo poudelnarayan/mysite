@@ -7,7 +7,7 @@ const InterestSection = () => (
   >
     <div className="col-md-12">
       <div className="work col-md-7">
-        <h3 className="poppins-font">Interested to work?</h3>
+        <h3>Interested to work?</h3>
         <p className="work">
           You can make me work either by involving me in some projects or hire
           me as a full-time or part-time developer.

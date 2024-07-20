@@ -12,19 +12,19 @@ const Experience = () => (
         <Job
           time="2019 - Present"
           title="Web Developer"
-          company="Lumbini Tech"
-          description="Working as a responsive Full-Stack ( frontend + backend ) web developer since 2019 on Lumbini Tech"
+          company="Freelancing"
+          description="Working as a responsive Full-Stack ( frontend + backend ) web developer since 2019"
         />
         <Job
           time="2019 - present"
           title="Android Developer"
-          company="Lumbini Tech"
+          company="Frelancing"
           description="Can develop native and hybrid android apps according to the user requirements."
         />
         <Job
           time="2019 - Present"
           title="UI/UX Designer"
-          company="Lumbini Tech"
+          company="Freelancing"
           description="Can be hired as UI/UX designer to give a new life to your webpage and apps."
         />
       </ul>

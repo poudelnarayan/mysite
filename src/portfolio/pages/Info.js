@@ -12,7 +12,6 @@ const Info = () => {
       document.body.classList.remove("home");
     };
   }, []);
- 
 
   return (
     <React.Fragment>
@@ -30,14 +29,14 @@ const Info = () => {
           <div className="col-12 col-lg-8 offset-lg-4 home-details text-left text-lg-left">
             <div>
               <img
-                src="/static/Image/img-mobile.jpg" // Adjust the path if necessary
+                src="/static/Image/myimg.png" // Adjust the path if necessary
                 className="img-fluid main-img-mobile d-none d-sm-block d-lg-none"
                 alt="me"
               />
               <h6 className="text-uppercase open-sans-font mb-0 d-block d-sm-none d-lg-block">
                 Hi there !
               </h6>
-              <h1 className="text-uppercase poppins-font">
+              <h1 className="text-uppercase">
                 <span>I'm</span> Narayan Poudel
               </h1>
               <p className="open-sans-font">
